@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agendar</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/agendar.css" %}" type="text/css">
+    <script src="{% static "js/gijgo.min.js" %}"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+<div class="form-sec">
+  <h4>Agendar servicios</h4>
+  
+ <form >
+    <div class="form-group">
+        <br>
+        <label>Seleccione servicios a contratar:</label>
+        <div class="checkbox">
+        <label><input type="checkbox" value=""> Verificación de instalaciones y terminaciones</label>
+        </div>
+        <div class="checkbox">
+        <label><input type="checkbox" value=""> Medición de metros cuadrados de la vivienda</label>
+        </div>
+        <div class="checkbox">
+        <label><input type="checkbox" value=""> Inspección de luz, instalaciones sanitarias y gas</label>
+        </div>
+        <div class="checkbox">
+        <label><input type="checkbox" value=""> Termografías</label>
+        </div>
+    </div>
+    
+    
+    <div class="form-group">
+      <label>Fecha:</label>
+      <input id="datepicker" width="276" />
+      <script>
+          $('#datepicker').datepicker({
+              uiLibrary: 'bootstrap4'
+          });
+      </script>
+    </div>
+
+    <div class="form-group">
+      <label>Horario:</label>
+      <input id="timepicker" width="276" />
+    <script>
+        $('#timepicker').timepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+    </div>
+
+
+    <div class="form-group">
+      <label>Direccion:</label>
+      <input type="text" class="form-control" id="phone" placeholder="Direccion" name="direccion">
+    </div>
+    
+    <div class="form-group">
+      <label>Telefono:</label>
+      <input type="tel" class="form-control" id="phone" placeholder="Telefono" name="phone">
+    </div>
+	 
+	
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  </div>
+
+
+</div>
+</div>
+
+
+
+</body>
+    
+    <script src="{% static "js/popper.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script src="{% static "js/jquery.validate.js" %}"></script>
+</html>

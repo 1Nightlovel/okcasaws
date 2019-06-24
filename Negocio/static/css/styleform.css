@@ -1,0 +1,33 @@
+
+.fondo_form{
+	background:url(../img/3.jpg)no-repeat; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+h1.titulos {
+	padding-top: 1em;
+	font-size: 2.8em;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 6px;
+	line-height:1.5;
+}
+label{
+    display: inline-block;
+    position: relative;
+    font-size: 1.1em;
+    z-index: 9;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-transition: all 0.25s linear;
+}
+
+label{
+    color: #f5e7cc;
+    position: relative;
+    display: inline-block;
+}

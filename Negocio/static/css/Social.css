@@ -1,0 +1,31 @@
+.fa {
+    
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 30px;
+    align-content: center;
+}
+
+.fa-facebook-square{
+    color:#3b5999;
+}
+
+.fa-google-plus-square{
+    color: #dd4b39;
+}
+
+.fa-instagram{
+    color:#e4405f;
+}
+
+.fa-envelope-square{
+    color:black;
+}
+
+.margenicono{
+    margin-right: 15px;
+    margin-left: 15px;
+}
